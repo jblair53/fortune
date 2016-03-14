@@ -16,7 +16,7 @@ body {
 .wrapper {
   width: 900px;
   margin: 0 auto;
-  background-color: purple;
+  /*background-color: purple;*/
 }
 
 .header1 {
@@ -30,21 +30,22 @@ body {
 }
 
 .header2 {
-  text-align: center;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  position: relative;
 }
 
 .header2 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.7em;
+  text-align: center;
 }
 
 .col-1 {
   width: 20%;
   float: left;
-  background-color: pink;
-  padding: 20px 25px 0 0;
+  /*background-color: pink;*/
+  padding: 30px 25px 0 0;
   position: relative;
 }
 
@@ -62,30 +63,47 @@ body {
 
 .absolute {
   position: absolute;
-  right: -20px;
+  right: 15px;
   width: 100px;
+}
+
+.absolute2 {
+  position: absolute;
+  right: -45px;
+  width: 100px;
+}
+
+.absolute3 {
+  position: absolute;
+  width: 75px;
+  background-color: white;
+  bottom: -10px;
+  z-index: 999;
+  font-style: italic;
+  font-size: 1.3em;
+  font-family: 'PT Serif', serif;
 }
 
 .col-2 {
   width: 55%;
   float: left;
-  background-color: green;
-  margin: 0 20px 0 20px;
-  padding-top: 20px;
+  /*background-color: green;*/
+  margin: 0 20px 20px 20px;
+  padding-top: 30px;
 }
 
 .col-3 {
   width: 20%;
   float: left;
-  padding-top: 20px;
-  background-color: yellow;
+  padding-top: 30px;
+  /*background-color: yellow;*/
 }
 
 .col-3 p{
   font-size: .8em;
 }
 
-img {
+.col-2 img {
   width: 100%;
 }
 
@@ -100,11 +118,11 @@ section {
 }
 
 .lower-section-wrapper {
-  border-left: 1px dashed black;
-  border-top: 1px dashed black;
-  border-right: 1px dashed black;
+  border-left: 1px dashed gray;
+  border-top: 1px dashed gray;
+  border-right: 1px dashed gray;
   border-bottom: 20px solid black;
-  background-color: orange;
+  /*background-color: orange;*/
 }
 
 .lower-section-heading {
@@ -125,7 +143,7 @@ section {
   width: 33.33%;
   padding: 8px 35px;
   min-height: 180px;
-  border-right: 1px dashed black;
+  border-right: 1px dashed gray;
   text-align: center;
   font-size: .9em;
 }
@@ -147,11 +165,31 @@ section {
 
 .footer1 {
   clear: both;
-  background-color: yellow;
-
+  /*background-color: yellow;*/
+  border-bottom: 10px solid black;
 }
+
+.footer1 p {
+  font-family: 'PT Serif', serif;
+  font-size: .6em;
+  padding: 25px 0;
+}
+
+.footer1::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .footer2 {
-  background-color: red;
+  /*background-color: red;*/
+  padding: 15px 0;
+  text-align: right;
+  clear: both;
+}
+
+.footer2 p {
+  font-family: 'PT Serif', serif;
 }
 
 .page-number {
@@ -174,4 +212,16 @@ section {
 
 .padding-bottom {
   padding-bottom: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
