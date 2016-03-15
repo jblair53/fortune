@@ -82,13 +82,13 @@ body {
 
 .absolute {
   position: absolute;
-  right: 15px;
+  right: 20px;
   width: 100px;
 }
 
 .absolute2 {
   position: absolute;
-  right: -45px;
+  right: -50px;
   width: 100px;
 }
 
